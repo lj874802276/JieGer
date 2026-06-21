@@ -10,7 +10,7 @@
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://busuanzi.ibruce.info; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self' https://busuanzi.ibruce.info; frame-ancestors 'none';">
 
     <!-- Open Graph -->
     <meta property="og:title" content="JieGer - HarmonyOS 独立开发者">
@@ -214,6 +214,12 @@
                 </a>
             </div>
             <p class="footer__text">© 2026 JieGer.</p>
+            <p class="footer__visitor" id="visitorCount">
+                <span class="footer__visitor-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </span>
+                <span id="busuanzi_value_site_pv">--</span> 次访问
+            </p>
         </div>
     </footer>
 
@@ -221,6 +227,7 @@
         <span class="toast__message">邮箱已复制到剪贴板</span>
     </div>
 
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
