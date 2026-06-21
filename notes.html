@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JieGer 的技术笔记 - HarmonyOS 开发经验与思考。">
+    <meta name="keywords" content="JieGer, HarmonyOS, 技术笔记, ArkTS, 鸿蒙开发">
+    <meta name="author" content="JieGer">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self';">
+
+    <meta property="og:title" content="笔记 - JieGer">
+    <meta property="og:description" content="JieGer 的 HarmonyOS 开发经验与思考。">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="笔记 - JieGer">
+    <meta name="twitter:description" content="JieGer 的 HarmonyOS 开发经验与思考。">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/page.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page.css">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%233B5BDB'/%3E%3Ctext x='50' y='68' font-size='48' font-weight='700' text-anchor='middle' fill='white' font-family='-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif'%3EJG%3C/text%3E%3C/svg%3E">
+    <title>笔记 - JieGer</title>
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle" aria-label="切换暗色模式">
+        <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+    <nav class="page-nav" aria-label="页面导航">
+        <div class="container">
+            <div class="page-nav__inner">
+                <a href="index.html" class="page-nav__back" aria-label="返回首页">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    首页
+                </a>
+                <span class="page-nav__current" aria-current="page">笔记</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-header__title">笔记</h1>
+            <p class="page-header__subtitle">HarmonyOS 开发经验与思考</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="notes-list" aria-labelledby="notes-list-heading">
+            <div class="container">
+                <h2 id="notes-list-heading" class="visually-hidden">文章列表</h2>
+
+                <article class="note-item">
+                    <time class="note-item__date" datetime="2025-05-15">2025.05.15</time>
+                    <h3 class="note-item__title">
+                        <a href="javascript:void(0)" class="note-item__link" aria-disabled="true">ArkTS 状态管理最佳实践</a>
+                    </h3>
+                    <p class="note-item__excerpt">在鸿蒙应用开发中，合理的状态管理架构直接影响代码可维护性。本文分享我在实际项目中总结的 @State、@Prop、@Link 等装饰器的使用场景与避坑指南。</p>
+                    <div class="note-item__tags">
+                        <span class="project-card__tag">ArkTS</span>
+                        <span class="project-card__tag">State Management</span>
+                    </div>
+                </article>
+
+                <article class="note-item">
+                    <time class="note-item__date" datetime="2025-04-02">2025.04.02</time>
+                    <h3 class="note-item__title">
+                        <a href="javascript:void(0)" class="note-item__link" aria-disabled="true">HarmonyOS 服务卡片开发入门</a>
+                    </h3>
+                    <p class="note-item__excerpt">服务卡片是 HarmonyOS 最具特色的交互形态之一。从配置 form_config.json 到实现卡片生命周期回调，完整梳理开发全流程。</p>
+                    <div class="note-item__tags">
+                        <span class="project-card__tag">Service Widget</span>
+                        <span class="project-card__tag">Tutorial</span>
+                    </div>
+                </article>
+
+                <article class="note-item">
+                    <time class="note-item__date" datetime="2025-02-20">2025.02.20</time>
+                    <h3 class="note-item__title">
+                        <a href="javascript:void(0)" class="note-item__link" aria-disabled="true">为什么我选择原生开发而非跨平台</a>
+                    </h3>
+                    <p class="note-item__excerpt">跨平台方案看似省时，但在系统特性适配、性能调优和长期维护上往往得不偿失。从实际案例出发，分析原生开发的长期价值。</p>
+                    <div class="note-item__tags">
+                        <span class="project-card__tag">Architecture</span>
+                        <span class="project-card__tag">Opinion</span>
+                    </div>
+                </article>
+
+                <article class="note-item">
+                    <time class="note-item__date" datetime="2024-11-08">2024.11.08</time>
+                    <h3 class="note-item__title">
+                        <a href="javascript:void(0)" class="note-item__link" aria-disabled="true">DevEco Studio 调试技巧合集</a>
+                    </h3>
+                    <p class="note-item__excerpt">提升开发效率的调试技巧整理，包括预览器高级用法、断点调试策略、性能分析工具的使用心得。</p>
+                    <div class="note-item__tags">
+                        <span class="project-card__tag">DevEco Studio</span>
+                        <span class="project-card__tag">Tooling</span>
+                    </div>
+                </article>
+
+                <article class="note-item">
+                    <time class="note-item__date" datetime="2024-09-12">2024.09.12</time>
+                    <h3 class="note-item__title">
+                        <a href="javascript:void(0)" class="note-item__link" aria-disabled="true">鸿蒙应用隐私设计 checklist</a>
+                    </h3>
+                    <p class="note-item__excerpt">从权限申请最小化、数据本地化处理到透明化告知，整理一份可落地的隐私设计检查清单。</p>
+                    <div class="note-item__tags">
+                        <span class="project-card__tag">Privacy</span>
+                        <span class="project-card__tag">Design</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__links">
+                <a href="mailto:healwis@qq.com" class="footer__link" aria-label="发送邮件">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+            </div>
+            <p class="footer__text">© 2026 JieGer.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

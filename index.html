@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JieGer - HarmonyOS 独立开发者，专注于鸿蒙原生应用开发，用理念驱动创新。">
+    <meta name="keywords" content="JieGer, HarmonyOS, 鸿蒙开发, ArkTS, 独立开发者, 原生应用">
+    <meta name="author" content="JieGer">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self';">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="JieGer - HarmonyOS 独立开发者">
+    <meta property="og:description" content="专注于鸿蒙原生应用开发，用理念驱动创新。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jieger.dev">
+    <meta property="og:locale" content="zh_CN">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="JieGer - HarmonyOS 独立开发者">
+    <meta name="twitter:description" content="专注于鸿蒙原生应用开发，用理念驱动创新。">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "JieGer",
+        "jobTitle": "HarmonyOS 独立开发者",
+        "email": "healwis@qq.com",
+        "description": "专注于鸿蒙原生应用开发，追求极简优雅与隐私优先的设计理念。",
+        "knowsAbout": ["ArkTS", "DevEco Studio", "HarmonyOS SDK", "TypeScript", "UI/UX Design"]
+    }
+    </script>
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%233B5BDB'/%3E%3Ctext x='50' y='68' font-size='48' font-weight='700' text-anchor='middle' fill='white' font-family='-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif'%3EJG%3C/text%3E%3C/svg%3E">
+    <title>JieGer - HarmonyOS 独立开发者</title>
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="切换暗色模式">
+        <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero__avatar">
+                <div class="hero__avatar-placeholder" aria-label="JieGer 头像占位">
+                    <span>JG</span>
+                </div>
+            </div>
+            <h1 class="hero__title">Hi, I'm JieGer.</h1>
+            <p class="hero__subtitle">独立开发者 · 用理念驱动鸿蒙原生应用</p>
+            <p class="hero__motto">少即是多，慢即是快</p>
+            <button class="btn btn--primary" data-email="healwis@qq.com" aria-label="复制邮箱地址联系 JieGer">与我联系</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="about fade-in" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" class="section-title">关于我</h2>
+                <p class="about__text">
+                    作为一名 HarmonyOS 独立开发者，我相信好的应用应当尊重系统原生体验、保持克制专注，并以用户隐私为首要考量。每一行代码都服务于长期价值，而非短期交付。
+                </p>
+            </div>
+        </section>
+
+        <section class="tech-stack fade-in" aria-labelledby="tech-heading">
+            <div class="container">
+                <h2 id="tech-heading" class="section-title">技术栈</h2>
+                <div class="tech-stack__tags">
+                    <span class="tag"><span class="tag__dot"></span>ArkTS</span>
+                    <span class="tag"><span class="tag__dot"></span>DevEco Studio</span>
+                    <span class="tag"><span class="tag__dot"></span>HarmonyOS SDK</span>
+                    <span class="tag"><span class="tag__dot"></span>TypeScript</span>
+                    <span class="tag"><span class="tag__dot"></span>UI/UX Design</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects fade-in" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading" class="section-title">精选作品</h2>
+                <div class="projects__grid">
+                    <article class="project-card">
+                        <div class="project-card__image" aria-label="今天吃啥饭应用截图">
+                            <picture>
+                                <source srcset="images/project-food.webp" type="image/webp">
+                                <img src="images/project-food.jpg" alt="今天吃啥饭应用界面" loading="lazy" width="400" height="250">
+                            </picture>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">今天吃啥饭</h3>
+                            <p class="project-card__desc">鸿蒙元服务，无需安装、即用即走。专为纠结吃什么的用户随机推荐菜品，一键解决每日选择困难。</p>
+                            <div class="project-card__tags">
+                                <span class="project-card__tag">ArkTS</span>
+                                <span class="project-card__tag">元服务</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__image" aria-label="鸿蒙待办应用截图">
+                            <picture>
+                                <source srcset="images/project-todo.webp" type="image/webp">
+                                <img src="images/project-todo.jpg" alt="鸿蒙待办应用界面" loading="lazy" width="400" height="250">
+                            </picture>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">鸿蒙待办</h3>
+                            <p class="project-card__desc">原生 ArkTS 开发的待办管理应用，支持本地数据持久化与卡片形态。</p>
+                            <div class="project-card__tags">
+                                <span class="project-card__tag">ArkTS</span>
+                                <span class="project-card__tag">HarmonyOS</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__image" aria-label="轻记账应用截图">
+                            <picture>
+                                <source srcset="images/project-expense.webp" type="image/webp">
+                                <img src="images/project-expense.jpg" alt="轻记账应用界面" loading="lazy" width="400" height="250">
+                            </picture>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">轻记账</h3>
+                            <p class="project-card__desc">隐私优先的本地记账工具，零权限申请，数据完全离线存储。</p>
+                            <div class="project-card__tags">
+                                <span class="project-card__tag">TypeScript</span>
+                                <span class="project-card__tag">UI/UX</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="projects__more">
+                    <a href="projects.html" class="reserved-entry__link" aria-label="查看全部作品">查看全部作品 →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="philosophy fade-in" aria-labelledby="philosophy-heading">
+            <div class="container">
+                <h2 id="philosophy-heading" class="section-title">开发理念</h2>
+                <div class="philosophy__grid">
+                    <article class="card">
+                        <span class="card__number">01</span>
+                        <h3 class="card__title">尊重系统原生体验</h3>
+                        <p class="card__text">不强行移植 iOS/Android 逻辑，深度融入 HarmonyOS 设计规范</p>
+                    </article>
+                    <article class="card">
+                        <span class="card__number">02</span>
+                        <h3 class="card__title">克制与专注</h3>
+                        <p class="card__text">每个功能都有明确目的，拒绝"为了创新而创新"</p>
+                    </article>
+                    <article class="card">
+                        <span class="card__number">03</span>
+                        <h3 class="card__title">隐私优先</h3>
+                        <p class="card__text">默认最小权限，数据本地处理，透明可控</p>
+                    </article>
+                    <article class="card">
+                        <span class="card__number">04</span>
+                        <h3 class="card__title">为长期使用而构建</h3>
+                        <p class="card__text">代码可维护、架构可演进，不追求短期交付</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="reserved-entry fade-in" aria-label="技术笔记预留入口">
+            <div class="container">
+                <a href="notes.html" class="reserved-entry__link" aria-label="探索技术笔记">探索技术笔记 →</a>
+            </div>
+        </section>
+
+        <section class="contact fade-in" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="section-title">联系我</h2>
+                <p class="contact__text">有合作想法或技术交流？欢迎随时联系</p>
+                <button class="contact__email" data-email="healwis@qq.com" aria-label="点击复制邮箱地址">
+                    healwis@qq.com
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__links">
+                <a href="mailto:healwis@qq.com" class="footer__link" aria-label="发送邮件">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+            </div>
+            <p class="footer__text">© 2026 JieGer.</p>
+        </div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" aria-hidden="true">
+        <span class="toast__message">邮箱已复制到剪贴板</span>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

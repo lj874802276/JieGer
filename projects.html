@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JieGer 的作品集 - HarmonyOS 原生应用开发项目展示。">
+    <meta name="keywords" content="JieGer, HarmonyOS, 鸿蒙开发, 作品集, ArkTS">
+    <meta name="author" content="JieGer">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self';">
+
+    <meta property="og:title" content="作品 - JieGer">
+    <meta property="og:description" content="JieGer 的 HarmonyOS 原生应用开发项目展示。">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="作品 - JieGer">
+    <meta name="twitter:description" content="JieGer 的 HarmonyOS 原生应用开发项目展示。">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/page.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page.css">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%233B5BDB'/%3E%3Ctext x='50' y='68' font-size='48' font-weight='700' text-anchor='middle' fill='white' font-family='-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif'%3EJG%3C/text%3E%3C/svg%3E">
+    <title>作品 - JieGer</title>
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle" aria-label="切换暗色模式">
+        <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+    <nav class="page-nav" aria-label="页面导航">
+        <div class="container">
+            <div class="page-nav__inner">
+                <a href="index.html" class="page-nav__back" aria-label="返回首页">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    首页
+                </a>
+                <span class="page-nav__current" aria-current="page">作品</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-header__title">作品</h1>
+            <p class="page-header__subtitle">HarmonyOS 原生应用开发实践</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="projects-list" aria-labelledby="projects-list-heading">
+            <div class="container">
+                <h2 id="projects-list-heading" class="visually-hidden">项目列表</h2>
+
+                <article class="project-detail">
+                    <div class="project-detail__image" aria-label="今天吃啥饭应用截图">
+                        <picture>
+                            <source srcset="images/project-food.webp" type="image/webp">
+                            <img src="images/project-food.jpg" alt="今天吃啥饭应用界面" loading="lazy" width="400" height="300">
+                        </picture>
+                    </div>
+                    <div class="project-detail__content">
+                        <h3 class="project-detail__title">今天吃啥饭</h3>
+                        <p class="project-detail__desc">鸿蒙元服务，无需安装、即用即走。专为纠结吃什么的用户随机推荐菜品，一键解决每日选择困难，轻松决定今天吃什么。</p>
+                        <div class="project-detail__meta">
+                            <div class="project-detail__tags">
+                                <span class="project-card__tag">ArkTS</span>
+                                <span class="project-card__tag">元服务</span>
+                                <span class="project-card__tag">Random</span>
+                            </div>
+                            <span class="project-detail__year">2025</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-detail">
+                    <div class="project-detail__image" aria-label="鸿蒙待办应用截图">
+                        <picture>
+                            <source srcset="images/project-todo.webp" type="image/webp">
+                            <img src="images/project-todo.jpg" alt="鸿蒙待办应用界面" loading="lazy" width="400" height="300">
+                        </picture>
+                    </div>
+                    <div class="project-detail__content">
+                        <h3 class="project-detail__title">鸿蒙待办</h3>
+                        <p class="project-detail__desc">原生 ArkTS 开发的待办管理应用，支持本地数据持久化与卡片形态。采用声明式 UI 构建界面，遵循 HarmonyOS 设计规范，实现流畅的交互动效与状态管理。</p>
+                        <div class="project-detail__meta">
+                            <div class="project-detail__tags">
+                                <span class="project-card__tag">ArkTS</span>
+                                <span class="project-card__tag">HarmonyOS</span>
+                                <span class="project-card__tag">LocalStorage</span>
+                            </div>
+                            <span class="project-detail__year">2025</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-detail">
+                    <div class="project-detail__image" aria-label="轻记账应用截图">
+                        <picture>
+                            <source srcset="images/project-expense.webp" type="image/webp">
+                            <img src="images/project-expense.jpg" alt="轻记账应用界面" loading="lazy" width="400" height="300">
+                        </picture>
+                    </div>
+                    <div class="project-detail__content">
+                        <h3 class="project-detail__title">轻记账</h3>
+                        <p class="project-detail__desc">隐私优先的本地记账工具，零权限申请，数据完全离线存储。界面极简，操作路径短，支持分类统计与月度报表导出。</p>
+                        <div class="project-detail__meta">
+                            <div class="project-detail__tags">
+                                <span class="project-card__tag">TypeScript</span>
+                                <span class="project-card__tag">UI/UX</span>
+                                <span class="project-card__tag">Privacy</span>
+                            </div>
+                            <span class="project-detail__year">2025</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-detail">
+                    <div class="project-detail__image" aria-label="专注时钟应用截图">
+                        <picture>
+                            <source srcset="images/project-focus.webp" type="image/webp">
+                            <img src="images/project-focus.jpg" alt="专注时钟应用界面" loading="lazy" width="400" height="300">
+                        </picture>
+                    </div>
+                    <div class="project-detail__content">
+                        <h3 class="project-detail__title">专注时钟</h3>
+                        <p class="project-detail__desc">基于番茄工作法的时间管理应用，极简界面，无干扰体验。支持自定义专注时长、休息提醒与每日专注统计，帮助用户建立高效工作节奏。</p>
+                        <div class="project-detail__meta">
+                            <div class="project-detail__tags">
+                                <span class="project-card__tag">ArkTS</span>
+                                <span class="project-card__tag">Animation</span>
+                                <span class="project-card__tag">Timer</span>
+                            </div>
+                            <span class="project-detail__year">2024</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__links">
+                <a href="mailto:healwis@qq.com" class="footer__link" aria-label="发送邮件">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+            </div>
+            <p class="footer__text">© 2026 JieGer.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
